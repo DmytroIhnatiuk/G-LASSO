@@ -1,0 +1,95 @@
+.burger {
+	align-items: center;
+	justify-content: center;
+	height: 0.4rem;
+	width: 0.4rem;
+	position: relative;
+	color: inherit;
+	cursor: pointer;
+	z-index: 4;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	transition: border 0.3s;
+	border-radius: 50%;
+	background: #404040;
+	padding: 0.12rem;
+	&:focus {
+		outline: none;
+	}
+
+	span {
+		position: absolute;
+		display: block;
+		background-color: white;
+		border-radius: 1px;
+		width: 0.11rem;
+		height: 1px;
+		transition: background-color 0.3s;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		border-radius: 1px;
+		width: 0.16rem;
+		height: 1px;
+		background-color: white;
+		transition: transform, 0.3s;
+	}
+
+	&:before {
+		transform: translate(0, -0.04rem);
+	}
+
+	&:after {
+		transform: translate(0, 0.04rem);
+		width: 0.07rem;
+	}
+
+	&.active {
+		z-index: 100;
+		background: transparent;
+		span {
+			background-color: transparent;
+		}
+
+		&:before {
+			transform: rotate(45deg);
+			width: 0.16rem;
+			background: #404040;
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+			width: 0.16rem;
+			background: #404040;
+		}
+	}
+
+	@media all and (max-width: 600px) {
+		display: inline-flex;
+	}
+}
+.header-black {
+	.burger {
+		span {
+			background: #2d2d2d;
+		}
+		&:before,
+		&:after {
+			background: #2d2d2d;
+		}
+		&.active {
+			span {
+				background: transparent;
+			}
+			&:before,
+			&:after {
+				background: white !important;
+			}
+		}
+	}
+}

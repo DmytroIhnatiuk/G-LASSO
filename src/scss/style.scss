@@ -1,0 +1,14 @@
+@use 'sass:math';
+@import 'helpers';
+@import 'fonts';
+@import 'base';
+@import 'components';
+@import 'pages';
+
+.volume-btn {
+	&.active {
+		border: 1px #404040 solid;
+		padding: 0.04rem;
+		border-radius: 0.1rem;
+	}
+}

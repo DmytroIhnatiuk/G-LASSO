@@ -1,0 +1,66 @@
+<header
+	class="h-[var(--header-height)] w-full e z-50 !fixed transition-transform duration-500 ease-linear before:absolute before:h-1 before:right-[var(--container-gap)] before:left-[var(--container-gap)] before:bottom-0 before:bg-black flex items-end pb-8 sm:pb-0"
+>
+	<div class="container flex items-center">
+		<a
+			href="index.html"
+			class="image h-[.43rem] sm:h-[.7rem] w-[1.34rem] sm:w-[2.2rem]"
+		>
+			<img class="object-contain" src="@img/logo.png" alt="logo" />
+		</a>
+		<div
+			class="menu ml-auto bg-bg lg:bg-transparent absolute top-0 right-[-3.6rem] lg:static px-16 py-32 sm:py-50 w-[3.6rem] h-[100vh] lg:w-auto lg:p-0 transition-transform duration-300 ease-linear flex flex-col lg:flex-row lg:h-full items-center z-50"
+		>
+			<a
+				href="index.html"
+				class="image h-[.43rem] w-[1.34rem] sm:hidden mb-50 block mx-auto"
+			>
+				<img class="object-contain" src="@img/logo.png" alt="logo" />
+			</a>
+			<ul
+				class="flex flex-col lg:flex-row items-center gap-32 lg:gap-40 mb-[1.2rem] lg:mb-0 lg:mr-50"
+			>
+				<li
+					class="border-b border-transparent border-solid lg:hover:border-black transition-colors !duration-300 ease-linear"
+				>
+					<a class="scroll-to" href="#why-us"> Про G’LASSO</a>
+				</li>
+				<li
+					class="border-b border-transparent border-solid lg:hover:border-black transition-colors !duration-300 ease-linear"
+				>
+					<a class="scroll-to" href="#reviews">Каталог </a>
+				</li>
+				<li
+					class="border-b border-transparent border-solid lg:hover:border-black transition-colors !duration-300 ease-linear"
+				>
+					<a class="scroll-to" href="#owners">Переваги </a>
+				</li>
+				<li
+					class="border-b border-transparent border-solid lg:hover:border-black transition-colors !duration-300 ease-linear"
+				>
+					<a href="contact.html">Відгуки</a>
+				</li>
+			</ul>
+
+			<a
+				class="p-12 border border-solid border-black bg-transparent lg:hover:bg-black lg:hover:text-white transition-colors duration-300 ease-linear cursor-pointer flex-center rounded-10 h-40 w-[1.7rem] block"
+			>
+				В каталог
+			</a>
+		</div>
+		<button
+			class="rounded bg-black size-40 flex-center border-black border-solid border lg:hover:bg-transparent transition-colors duration-300 ease-linear group ml-auto lg:ml-12 relative"
+		>
+			<span
+				class="absolute -top-6 right-0 size-16 text-s rounded bg-lavender flex-center"
+				>10
+			</span>
+			<svg
+				class="size-24 fill-none stroke-white group-hover:stroke-black transition-colors duration-300 ease-linear"
+			>
+				<use xlink:href="#cart-icon"></use>
+			</svg>
+		</button>
+		<button class="burger lg:!hidden ml-12"><span></span></button>
+	</div>
+</header>

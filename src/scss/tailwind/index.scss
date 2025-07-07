@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	// .nav-list {
+	// 	@apply mb-12 lg:mb-0 px-12 py-8 bg-transparent lg:hover:bg-light-orange transition-colors duration-300 ease-linear rounded-30;
+	// }
+}
+@layer utilities {
+	.main-gradient {
+		background: linear-gradient(132deg, #e9e3f1 21.91%, #c8bdd7 73.9%);
+	}
+	.bg-bubbles {
+		background: url('@img/bubble.png') center center/cover no-repeat;
+	}
+
+	.modal-container {
+		background: rgba(156, 148, 169, 0.5);
+		backdrop-filter: blur(10px);
+	}
+}

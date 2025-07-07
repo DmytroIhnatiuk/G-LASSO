@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ua">
+	@@include('html/_head.html',{ "title":"ProductPage" })
+	<body class="body text-black font-medium text-m bg-bg">
+		<div class="page-container">
+			@@include('html/_header.html',{})
+
+			<main>
+				<section
+					class="mt-[var(--header-height)] pt-24 lg:pt-32 mb-[.64rem] lg:mb-[1.1rem]"
+				>
+					<div class="container">
+						<!-- breadcrumb -->
+						<div class="flex mb-32 lg:mb-[0.64rem]">
+							<a
+								href="index.html"
+								class="lg:hover:text-lavender transition-colors duration-300 ease-linear last:pointer-events-none"
+							>
+								Головна
+							</a>
+							<span class="px-4">/</span>
+							<a
+								href="#"
+								class="lg:hover:text-lavender transition-colors duration-300 ease-linear last:pointer-events-none"
+							>
+								G’LASSO Hair Care Shampoo
+							</a>
+						</div>
+
+						<div class="lg:grid lg:grid-cols-2 gap-40">
+							<!-- LEFT: Sliders -->
+							<div
+								class="gap-14 block sm:flex sm:flex-row-reverse mb-16 lg:mb-0 sticky top-10"
+							>
+								<!-- Main Slider -->
+								<div
+									class="swiper sm:size-[4.5rem] h-[3.69rem] rounded-20 bg-white overflow-hidden max-w-full mb-16 sm:mb-0 p-36 before:absolute before:position-center before:w-1/2 before:h-3/4 before:rounded blur-60"
+									data-swiper="productSlider"
+								>
+									<div class="swiper-wrapper">
+										<div class="swiper-slide size-full">
+											<img
+												class="size-full object-contain"
+												src="@img/Rectangle 12848.png"
+												alt="product"
+											/>
+										</div>
+										<div class="swiper-slide size-full">
+											<img
+												class="size-full object-contain"
+												src="@img/Rectangle 12850.png"
+												alt="product"
+											/>
+										</div>
+										<div class="swiper-slide size-full">
+											<img
+												class="size-full object-contain"
+												src="@img/Rectangle 12848.png"
+												alt="product"
+											/>
+										</div>
+									</div>
+									<button
+										class="btn-prev rounded size-40 flex-center border border-solid absolute top-1/2 left-10 -translate-y-1/2 z-30 bg-transparent lg:hover:bg-black transition-colors duration-300 group"
+									>
+										<svg
+											class="size-24 stroke-black fill-none group-hover:stroke-white transition-colors duration-300"
+										>
+											<use href="#shevron-icon"></use>
+										</svg>
+									</button>
+									<button
+										class="btn-next rounded size-40 flex-center border border-solid absolute top-1/2 right-10 -translate-y-1/2 z-30 bg-transparent lg:hover:bg-black transition-colors duration-300 group"
+									>
+										<svg
+											class="size-24 stroke-black fill-none group-hover:stroke-white transition-colors duration-300 rotate-180"
+										>
+											<use href="#shevron-icon"></use>
+										</svg>
+									</button>
+								</div>
+
+								<!-- Thumbs -->
+								<div
+									class="swiper !min-h-0 !min-w-0 max-h-[4.5rem] max-w-full h-[1.03rem] sm:h-auto sm:w-[1.4rem]"
+									data-swiper="productSliderNav"
+								>
+									<div class="swiper-wrapper">
+										<div
+											class="swiper-slide w-full bg-white p-8 overflow-hidden before:absolute before:position-center before:w-1/2 before:h-3/4 before:rounded blur-60 rounded-10 sm:rounded-20 relative"
+										>
+											<img
+												class="object-contain size-full relative z-10"
+												src="@img/Rectangle 12848.png"
+												alt="thumb"
+											/>
+										</div>
+										<div
+											class="swiper-slide w-full bg-white p-8 overflow-hidden before:absolute before:position-center before:w-1/2 before:h-3/4 before:rounded blur-60 rounded-10 sm:rounded-20 relative"
+										>
+											<img
+												class="object-contain size-full relative z-10"
+												src="@img/Rectangle 12848.png"
+												alt="thumb"
+											/>
+										</div>
+										<div
+											class="swiper-slide w-full bg-white p-8 overflow-hidden before:absolute before:position-center before:w-1/2 before:h-3/4 before:rounded blur-60 rounded-10 sm:rounded-20 relative"
+										>
+											<img
+												class="object-contain size-full relative z-10"
+												src="@img/Rectangle 12848.png"
+												alt="thumb"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- RIGHT: Product Description -->
+							<div>
+								<div class="w-full mb-32">
+									<h1 class="h3 font-semibold mb-12">
+										G’LASSO Hair Care Shampoo
+									</h1>
+									<div class="flex gap-14 sm:gap-50 items-center mb-4 sm:mb-8">
+										<div class="font-semibold">Артикул: 00010001</div>
+										<div
+											class="py-8 px-24 rounded-10 bg-lavender font-semibold"
+										>
+											В наявності
+										</div>
+									</div>
+									<p class="mb-12 sm:mb-24">
+										G’Lasso Hair Care Solution спеціально розроблений для
+										зволоження та живлення волосся і шкіри голови. Завдяки
+										травам, вітамінам та амінокислотам у складі він відновлює
+										волосся та забезпечує догляд від кореня до кінчиків. Також
+										завдяки біотину та ніацину, що містяться в продукті, сприяє
+										виробленню кератину та допомагає оновленню волосся.
+									</p>
+
+									<div class="flex gap-16 items-center mb-12 sm:mb-16">
+										<label class="font-semibold">Об’єм</label>
+										<div class="flex flex-wrap gap-16 items-center">
+											<button class="volume-btn btn-outline">50мл</button>
+											<button class="volume-btn btn-outline active">
+												100мл
+											</button>
+											<button class="volume-btn btn-outline">200мл</button>
+											<button class="volume-btn btn-outline">200мл</button>
+										</div>
+									</div>
+
+									<div class="flex gap-16 items-center mb-12 sm:mb-16">
+										<label class="font-semibold">Кількість</label>
+										<div
+											class="quantity-selector border border-solid border-black rounded-10 gap-16 py-8 px-16 flex items-center"
+										>
+											<button class="qty-btn" data-action="decrease">-</button>
+											<input
+												type="number"
+												min="1"
+												value="1"
+												class="qty-input w-36 text-center bg-transparent"
+											/>
+											<button class="qty-btn" data-action="increase">+</button>
+										</div>
+									</div>
+
+									<div
+										class="flex items-center gap-24 mb-12 sm:mb-50 flex-wrap sm:flex-nowrap"
+									>
+										<h2 class="h3 font-semibold flex-shrink-0">450 грн</h2>
+										<s class="text-gray flex-shrink-0">550 грн</s>
+										<button
+											class="py-16 px-24 sm:border border-solid text-white border-black bg-black lg:hover:bg-transparent transition-colors duration-300 ease-linear w-full sm:w-auto sm:min-w-[2.4rem] rounded-10 lg:hover:text-black flex-center sm:ml-auto"
+										>
+											В кошик
+										</button>
+									</div>
+
+									<div class="flex gap-4 sm:gap-16 text-s sm:text-m">
+										<svg class="size-40 fill-black flex-shrink-0">
+											<use href="#delivery-icon"></use>
+										</svg>
+										<p>
+											Доставка по Україні здійснюється Новою поштою. Вартість
+											доставки розраховується поштовою службою
+										</p>
+									</div>
+								</div>
+
+								<!-- Tabs -->
+								<div class="tabs-customize">
+									<div class="flex gap-8 mb-16 overflow-x-scroll">
+										<div
+											class="px-12 sm:px-16 py-12 rounded-20 border border-solid border-lavender btn-customize cursor-pointer flex-shrink-0 text-lavender lg:hover:text-black transition-colors duration-300"
+										>
+											Опис товару
+										</div>
+										<div
+											class="px-12 sm:px-16 py-12 rounded-20 border border-solid border-lavender btn-customize cursor-pointer flex-shrink-0 text-lavender lg:hover:text-black transition-colors duration-300"
+										>
+											Характеристика
+										</div>
+										<div
+											class="px-12 sm:px-16 py-12 rounded-20 border border-solid border-lavender btn-customize cursor-pointer flex-shrink-0 text-lavender lg:hover:text-black transition-colors duration-300"
+										>
+											Спосіб використання
+										</div>
+									</div>
+
+									<div>
+										<div class="content-customize overflow-hidden bg-bg">
+											<p class="mb-16">
+												Завдяки спеціальним травам (екстракт листя шавлії
+												лікарської, екстракт листя берези білокорої) запобігає
+												утворенню лупи. Забезпечує вироблення антиоксидантів у
+												шкірі голови, сприяє зміцненню сполучної тканини.
+											</p>
+											<p class="mb-16">
+												Шампунь для догляду за волоссям G’lasso — це шампунь,
+												рекомендований для використання протягом першого року
+												після пересадки волосся. Він містить багато компонентів,
+												які зміцнюють і живлять волосся, допомагаючи
+												підтримувати баланс вологи та одночасно забезпечуючи
+												заспокійливий і лікувальний ефект для шкіри голови.
+											</p>
+											<p>
+												Амінокислоти та рослинні екстракти, що входять до
+												складу, живлять корені волосся, підтримують їх
+												зростання, а вітаміни зміцнюють волосся і надають йому
+												блискучого вигляду. Шампунь делікатно очищує волосся,
+												живлячи його і допомагаючи досягти більш яскравого і
+												здорового вигляду. Він спеціально розроблений для
+												зміцнення ослабленого волосся та підтримки здорового
+												росту. Не містить алергенів, барвників, парабенів,
+												силіконів, мінеральних олій, SLS, SLES та алкоголю.
+											</p>
+										</div>
+										<div class="content-customize overflow-hidden bg-bg">
+											<p>
+												До складу входять: пантенол, натрій PCA, аргінін,
+												аспарагінова кислота, PCA, гліцин, аланін, серин, валін,
+												пролін, треонін, ізолейцин, гістидин, фенілаланін,
+												алантоїн, ніацин, біотин, екстракт листя берези (Betula
+												alba), екстракт квіток ромашки лікарської (Chamomilla
+												recutita), екстракт хвоща польового (Equisetum arvense),
+												екстракт листя кропиви дводомної (Urtica dioica),
+												екстракт листя алое вера (Aloe barbadensis), екстракт
+												квіток хмелю (Humulus lupulus), екстракт кореня лопуха
+												(Arctium lappa), екстракт листя шавлії лікарської
+												(Salvia officinalis), екстракт листя зеленого чаю
+												(Camellia sinensis), екстракт хни (Lawsonia inermis),
+												екстракт насіння проса (Panicum milliaceum).
+											</p>
+										</div>
+										<div class="content-customize overflow-hidden bg-bg">
+											Шампунь для догляду за волоссям G’lasso забезпечує
+											індивідуальний догляд за вашим волоссям завдяки 11
+											трав’яним екстрактам та вітамінним комплексам. Наш
+											шампунь, який є надзвичайно ефективним після
+											трансплантації волосся, рекомендується використовувати
+											регулярно щодня протягом першого місяця.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="mb-120">
+					<h2 class="h2 font-semibold px-[var(--container-gap)]">
+						Часто купують разом
+					</h2>
+					<div
+						class="swiper pt-32 lg:px-[var(--container-gap)] pl-[var(--container-gap)]"
+						data-swiper="catalogSlider"
+					>
+						<div class="swiper-wrapper mb-40">
+							<!-- Товар -->
+							<div
+								class="swiper-slide shadow-custom rounded-20 px-16 py-24 bg-white flex flex-col justify-between"
+							>
+								<div
+									class="w-full h-[2.46rem] relative mb-16 before:absolute before:position-center before:w-1/2 before:h-3/4 before:rounded blur-60"
+								>
+									<img
+										class="size-full object-contain relative z-10"
+										src="@img/Rectangle 12848.png"
+										alt="product"
+									/>
+								</div>
+								<div
+									class="flex flex-col justify-between flex-1 min-h-[1.6rem]"
+								>
+									<div>
+										<h3 class="h4 font-semibold">G’LASSO Ozonized Oil</h3>
+										<p class="line-clamp-3">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Dolorem a porro consequuntur eaque quos odio, cum
+											repellendus blanditiis odit ex pariatur modi tempora
+											laudantium, maxime cupiditate illo esse voluptatum
+											reprehenderit!
+										</p>
+									</div>
+									<div class="grid grid-cols-2 gap-8 mt-8">
+										<div class="h4 font-bold flex-center">44€</div>
+										<a
+											href="#"
+											class="py-8 px-24 sm:border border-solid text-white border-black bg-black lg:hover:bg-transparent transition-colors duration-300 ease-linear w-full sm:w-auto rounded-10 lg:hover:text-black flex-center"
+										>
+											Детальніше
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Ще товар -->
+							<div
+								class="swiper-slide shadow-custom rounded-20 px-16 py-24 bg-white flex flex-col justify-between"
+							>
+								<div
+									class="w-full h-[2.46rem] relative mb-16 before:absolute before:position-center before:w-1/2 before:h-3/4 before:rounded blur-60"
+								>
+									<img
+										class="size-full object-contain relative z-10"
+										src="@img/Rectangle 12848.png"
+										alt="product"
+									/>
+								</div>
+								<div
+									class="flex flex-col justify-between flex-1 min-h-[1.6rem]"
+								>
+									<div>
+										<h3 class="h4 font-semibold">G’LASSO Ozonized Oil</h3>
+										<p class="line-clamp-3">Lorem ipsum dolor sit amet,</p>
+									</div>
+									<div class="grid grid-cols-2 gap-8 mt-8">
+										<div class="h4 font-bold flex-center">44€</div>
+										<a
+											href="#"
+											class="py-8 px-24 sm:border border-solid text-white border-black bg-black lg:hover:bg-transparent transition-colors duration-300 ease-linear w-full sm:w-auto rounded-10 lg:hover:text-black flex-center"
+										>
+											Детальніше
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- додай решту слайдів за аналогією -->
+						</div>
+
+						<!-- Навігація -->
+						<div class="flex gap-24 justify-center">
+							<button
+								class="btn-prev rounded size-40 flex-center border border-[#9C94A9] border-solid z-30 bg-transparent lg:hover:bg-[#9C94A9] transition-colors duration-300 group"
+							>
+								<svg
+									class="size-24 stroke-[#9C94A9] fill-none group-hover:stroke-black transition-colors duration-300"
+								>
+									<use href="#shevron-icon"></use>
+								</svg>
+							</button>
+							<button
+								class="btn-next rounded size-40 flex-center border border-[#9C94A9] border-solid z-30 bg-transparent lg:hover:bg-[#9C94A9] transition-colors duration-300 group"
+							>
+								<svg
+									class="size-24 stroke-[#9C94A9] fill-none group-hover:stroke-black transition-colors duration-300 rotate-180"
+								>
+									<use href="#shevron-icon"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.html',{})
+		</div>
+		@@include('html/_modal.htm',{}) @@include('html/_svg.html',{})
+		<script src="js/app.min.js"></script>
+		<script src="js/product.min.js"></script>
+	</body>
+</html>

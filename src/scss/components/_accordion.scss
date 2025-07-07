@@ -1,0 +1,47 @@
+.accordion {
+	&-header {
+		cursor: pointer;
+
+		&.active {
+			span {
+				transform: scale(1, -1);
+			}
+			.close {
+				display: none;
+			}
+			.open {
+				display: block;
+			}
+		}
+	}
+	&-content {
+		max-height: 0;
+		height: 100%;
+		overflow: hidden;
+		transition: max-height 0.3s ease-out;
+		&.active {
+			max-height: max-content;
+		}
+	}
+}
+
+.accordion-filter {
+	&-header {
+		cursor: pointer;
+
+		&.active {
+			svg {
+				transform: scale(1, -1);
+			}
+		}
+	}
+	&-content {
+		max-height: 0;
+		height: 100%;
+		overflow: hidden;
+		transition: max-height 0.3s ease-out;
+		@media all and (min-width: 1024px) {
+			max-height: auto;
+		}
+	}
+}

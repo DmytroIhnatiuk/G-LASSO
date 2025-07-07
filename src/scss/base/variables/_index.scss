@@ -1,0 +1,19 @@
+@import 'typography';
+
+:root {
+	//Base
+
+	--header-height: #{gem(80)};
+	--header-height-decrement: #{gem(-80)};
+	--container-gap: #{gem(15)};
+
+	@media all and (min-width: 640px) {
+		--container-gap: #{gem(50)};
+		--header-height: #{gem(90)};
+		--header-height-decrement: #{gem(-90)};
+	}
+
+	@media all and (min-width: 1024px) {
+		--container-gap: #{gem(100)};
+	}
+}

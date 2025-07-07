@@ -1,0 +1,16 @@
+header {
+	&.active {
+		.menu {
+			transform: translateX(-3.6rem) !important;
+		}
+	}
+	&.fixed {
+		background: #f6f6f6;
+	}
+}
+
+.header-black {
+	&.fixed {
+		background: #fbf8f5;
+	}
+}
